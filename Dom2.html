@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Interativo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label { display: block; margin-top: 10px; }
+    .lista { margin-top: 20px; }
+    button { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <form id="formulario">
+    <label>
+      Nome de Usuário:
+      <input type="text" id="usuario" required>
+    </label>
+    <label>
+      Senha:
+      <input type="password" id="senha" required>
+    </label>
+    <label>
+      Telefone:
+      <input type="tel" id="telefone" required>
+    </label>
+    <label>
+      Data de Nascimento:
+      <input type="date" id="dataNascimento" required>
+    </label>
+    <label>
+      E-mail:
+      <input type="email" id="email" required>
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <button id="limparLista">Limpar Lista</button>
+  <div class="lista" id="listaUsuarios"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
